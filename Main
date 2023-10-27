@@ -1,0 +1,57 @@
+def simple_calculator(num1,num2,operation):
+    if operation == "Subtract":
+        number = num1 - num2
+        return number
+    if operation == "Add":
+        number = num1 + num2
+        return number
+    
+number1 = int(input("Enter the first number"))
+number2 = int(input("Enter the second number"))
+operation = input("Do you want to (Add) or (Subtract)?")
+
+Sum = simple_calculator(number1,number2,operation)
+
+print(Sum)
+
+print("")
+print("NEXT SECTION!!!!")
+print("")
+
+import random
+
+def CandyDispenser(num):
+    print("You have",num, "Peices of candy!")
+    print("")
+    print("By the way, what candy do you want? to eat? Snickers or M&M's?")
+    candy = input("")
+    if candy == "Snickers":
+        num -= 1
+        print("here is some Snickers")
+        return num
+    elif candy == "M&M's":
+        num -= 1
+        print("here is some M&M's")
+        return num
+    else:
+        num -= 1
+        print("here is some M&M's")
+        return num
+    
+candyamount = int(input("How many candy do you want?"))
+for i in range(candyamount):
+    candyamount = CandyDispenser(candyamount)
+    
+    
+print("")
+print("NEXT SECTION!!!!")
+print("")
+
+
+def OobaAdder():
+    word = input("Enter a word:")
+    combinedWord = word+"ooba"
+    return combinedWord
+
+Word = OobaAdder()
+print(Word)
